@@ -6,7 +6,7 @@
  * @start: Start index
  * @end: End index
  */
-void range_output(int *array, int start, int end)
+void r_op(int *array, int start, int end)
 {
 	int i;
 

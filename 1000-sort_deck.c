@@ -7,7 +7,7 @@ void sort_v(deck_node_t **deck);
 void sort_deck(deck_node_t **deck);
 
 /**
- * _strcmp - func compares two str
+ * _strcmp - function that compares two strings
  * @a: First str
  * @b: Second str
  *
@@ -106,7 +106,7 @@ void sort_v(deck_node_t **deck)
 		j = i->prev;
 		while (j != NULL &&
 		       j->card->kind == i->card->kind &&
-		       obtain_num(j) > obtain_num(i))
+		       get_num(j) > get_num(i))
 		{
 			j->next = i->next;
 			if (i->next != NULL)
